@@ -1,0 +1,15 @@
+name: 'Format String for GitHub Actions'
+description: 'Formats a string with multiple possibilities'
+inputs:
+  value:
+    description: 'The value which to apply the formatting.'
+    required: true
+  format:
+    description: 'The format to apply, like "docker".'
+    required: true
+outputs:
+  formatted:
+    description: 'The value formatted accordingly.'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

@@ -1,0 +1,35 @@
+{
+  "name": "format-string-action",
+  "version": "1.0.0",
+  "description": "Formats a string with multiple possibilities",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **.js",
+    "package": "ncc build index.js -o dist",
+    "test": "eslint **.js && jest --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cappta/format-string-action.git"
+  },
+  "keywords": [
+    "Cappta",
+    "GitHub",
+    "Actions",
+    "JavaScript"
+  ],
+  "author": "Cappta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Cappta/format-string-action/issues"
+  },
+  "homepage": "https://github.com/Cappta/format-string-action",
+  "dependencies": {
+    "@actions/core": "^1.6.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3",
+    "eslint": "^8.1.0",
+    "jest": "^27.0.3"
+  }
+}
